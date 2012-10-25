@@ -8,7 +8,8 @@ public class Bubblesort {
             flag = false;
 
             for (int i = 0; i < nums.length - 1; i++) {
-
+		// If we get through a whole loop without seeing something to be done, then exit and finish
+		//     Otherwise, tick the flag to let us continue another sweep
                 if (nums[i] > nums[i + 1]) {
                     int temp = nums[i];
                     nums[i] = nums[i + 1];
